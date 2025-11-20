@@ -1,0 +1,25 @@
+# Smart No-Smoking Detection System
+# Python Dependencies for Raspberry Pi Zero 2 W
+
+# Computer Vision
+opencv-python-headless>=4.5.0
+numpy>=1.19.0
+
+# Image Processing
+Pillow>=8.0.0
+
+# Hardware Interface
+picamera2>=0.3.0
+RPi.GPIO>=0.7.0
+
+# OLED Display
+luma.oled>=3.8.0
+luma.core>=2.3.0
+
+# Web Framework
+Flask>=2.0.0
+
+# Optional: AI Model (if using MobileNet-SSD)
+# Download separately:
+# wget https://raw.githubusercontent.com/chuanqi305/MobileNet-SSD/master/MobileNetSSD_deploy.prototxt
+# wget https://github.com/chuanqi305/MobileNet-SSD/raw/master/MobileNetSSD_deploy.caffemodel

@@ -1,0 +1,17 @@
+[Unit]
+Description=No-Smoking Detection System with OLED Display
+After=network.target
+
+[Service]
+Type=simple
+User=raspberrypi
+WorkingDirectory=/home/raspberrypi
+Environment="PATH=/home/raspberrypi/smoke-env/bin:/usr/local/bin:/usr/bin:/bin"
+ExecStart=/home/raspberrypi/smoke-env/bin/python /home/raspberrypi/smoking_detector_with_sh1106.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
